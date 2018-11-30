@@ -14,7 +14,35 @@ var channel = "509357857666236434";//ايدي الروم
     },305);
 })
 
-client.on('message', message => {
+Save New Duplicate & Edit Just Text Twitter
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+client.on('guildMemberAdd', member => {
+
+const mohamed= member.guild.channels.get("ايدي الروم");
+
+if(!mohamed) return;
+
+if(mohamed) {
+
+setTimeout(() => mohamed.send(`Welcome`), 4000)        
+
+}
+
+});.on('message', message => {
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -31,4 +59,16 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('
  });
 
  
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);client.on('guildMemberAdd', member => {
+
+const mohamed= member.guild.channels.get("ايدي الروم");
+
+if(!mohamed) return;
+
+if(mohamed) {
+
+setTimeout(() => mohamed.send(`Welcome`), 4000)        
+
+}
+
+});
